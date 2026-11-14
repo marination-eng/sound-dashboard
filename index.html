@@ -182,7 +182,79 @@
             </article>
         </div>
     </section>
+<CodeBlock language="html" editable>
+<section class="converter-section" id="converter">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">AUDIO CONVERSION</span>
+            <h2>Audio Converter</h2>
+            <p>Convert your audio files into your preferred format.</p>
+        </div>
+    </div>
 
+
+<div class="converter-card">
+
+<label for="converterFile" class="converter-upload">
+<span class="converter-upload-icon">↑</span>
+<strong>Select an audio file</strong>
+<span id="converterFileName">MP3, WAV, OGG, M4A and more</span>
+<input
+                type="file"
+                id="converterFile"
+                accept="audio/*"
+                hidden
+            >
+</label>
+
+<div class="converter-settings">
+
+<label>
+Output format
+<select id="converterFormat">
+<option value="mp3">MP3</option>
+<option value="wav">WAV</option>
+<option value="ogg">OGG</option>
+<option value="aac">AAC</option>
+<option value="m4a">M4A</option>
+<option value="flac">FLAC</option>
+</select>
+</label>
+
+<label>
+Audio bitrate
+<select id="converterBitrate">
+<option value="128">128 kbps</option>
+<option value="192" selected>192 kbps</option>
+<option value="256">256 kbps</option>
+<option value="320">320 kbps</option>
+</select>
+</label>
+
+</div>
+
+<button id="convertButton" class="primary-button" disabled>
+Convert audio
+</button>
+
+<div class="converter-progress">
+<div class="converter-progress-heading">
+<span id="converterStatus">Waiting for audio file...</span>
+<span id="converterProgressText">0%</span>
+</div>
+
+<progress id="converterProgress" value="0" max="100"></progress>
+</div>
+
+<a id="downloadConverted" class="download-button" hidden>
+↓ Download converted audio
+</a>
+
+</div>
+
+</section>
+</CodeBlock>
+    
 </main>
 
 <footer class="footer">
