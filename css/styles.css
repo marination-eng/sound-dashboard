@@ -401,3 +401,95 @@ select {
         padding: 25px 15px;
     }
 }
+
+/* AUDIO EDITOR */
+
+.editor-section {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.editor-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.editor-description {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+#spectrogram {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: fill;
+    background: #080910;
+    border-radius: 10px;
+    image-rendering: auto;
+}
+
+.spectrogram-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.equalizer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.eq-control {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.eq-control span {
+    font-weight: 700;
+}
+
+.eq-control strong {
+    color: var(--accent-light);
+    font-size: 23px;
+}
+
+.eq-control input {
+    width: 100%;
+    accent-color: var(--accent);
+}
+
+.eq-control small {
+    color: var(--muted);
+}
+
+.upload-box.dragging {
+    border-color: var(--accent);
+    background: var(--surface-hover);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 650px) {
+    .equalizer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .editor-card {
+        padding: 16px;
+    }
+}
