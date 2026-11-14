@@ -720,3 +720,92 @@ button:disabled {
         text-align: center;
     }
 }
+
+/* ===== COLOR FIX ===== */
+
+/* General text */
+body {
+    color: #111111;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+strong {
+    color: #111111;
+}
+
+/* Paragraphs and descriptions */
+p,
+label,
+small,
+.editor-description {
+    color: #111111;
+}
+
+/* Header */
+.header {
+    background: #171717;
+}
+
+.logo,
+.logo span {
+    color: #ffffff !important;
+}
+
+.header nav a {
+    color: #ffffff !important;
+}
+
+.header nav a:hover {
+    color: #b8a4ff !important;
+}
+
+/* Hero */
+.hero h1,
+.hero h1 span {
+    color: #111111;
+}
+
+.hero p {
+    color: #333333;
+}
+
+/* Cards */
+.tool-card,
+.editor-card,
+.player-card,
+.converter-card {
+    background: #ffffff;
+    color: #111111;
+}
+
+/* Tool descriptions */
+.tool-card p {
+    color: #333333;
+}
+
+/* Status labels */
+.tool-status,
+.upload-formats,
+.converter-upload span {
+    color: #555555;
+}
+
+/* Input fields */
+input,
+select {
+    color: #111111;
+}
+
+/* Footer */
+.footer {
+    background: #171717;
+    color: #ffffff;
+}
+
+.footer span {
+    color: #ffffff;
+}
