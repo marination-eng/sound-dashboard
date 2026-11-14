@@ -2,16 +2,24 @@
 /* =================================
    SOUND DASHBOARD - MAIN STYLES
 ================================= */
-
 :root {
-    --background: #090b10;
-    --surface: #11151e;
-    --surface-hover: #191f2b;
-    --border: #252c39;
-    --text: #f4f6fb;
-    --muted: #929bad;
-    --accent: #8b7cff;
-    --accent-light: #b3a9ff;
+    color-scheme: light;
+
+    --bg: #f7f8fc;
+    --surface: #ffffff;
+    --surface-2: #f1f2f8;
+    --border: #e5e7ef;
+
+    --text: #171827;
+    --muted: #777b91;
+
+    --accent: #7657e8;
+    --accent-hover: #6544d5;
+    --accent-light: #eee9ff;
+
+    --danger: #e05265;
+
+    --shadow: 0 8px 30px rgba(35, 30, 70, 0.06);
 }
 
 * {
@@ -492,4 +500,81 @@ select {
     .editor-card {
         padding: 16px;
     }
+}
+/* =========================
+   LIGHT MODE
+========================= */
+
+html,
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+body {
+    color-scheme: light;
+}
+
+header,
+nav,
+footer {
+    color: var(--text);
+}
+
+.card,
+.editor-card,
+.workspace,
+.tool-card,
+.upload-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+input,
+select,
+textarea,
+button:not(.primary-button) {
+    background: var(--surface-2);
+    color: var(--text);
+    border-color: var(--border);
+}
+
+input[type="range"] {
+    accent-color: var(--accent);
+}
+
+button,
+a {
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(0.97);
+}
+
+.upload-box {
+    background: #fafaff;
+}
+
+.upload-box.dragging {
+    background: var(--accent-light);
+    border-color: var(--accent);
+}
+
+.editor-description,
+p,
+label,
+.caption {
+    color: var(--muted);
+}
+
+#spectrogram,
+#waveform {
+    border-radius: 12px;
+}
+
+::selection {
+    background: var(--accent-light);
+    color: var(--accent);
 }
