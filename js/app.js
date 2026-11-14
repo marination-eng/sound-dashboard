@@ -5,6 +5,7 @@ import {
     drawSpectrogram
 } from "./visualizer.js";
 import { formatTime } from "./tools.js";
+import { initAudioConverter } from "./converter.js";
 
 const audio = new AudioEngine();
 
