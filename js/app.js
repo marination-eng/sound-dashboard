@@ -214,3 +214,4 @@ window.addEventListener("resize", () => {
         );
     }
 });
+initAudioConverter();
