@@ -168,7 +168,7 @@ export function initAudioConverter() {
             } else if (outputFormat === "m4a") {
                 argumentsList.push(
                     "-c:a", "aac",
-                    "-b:a", `${bitrate}k"
+                    "-b:a", `${bitrate}k`
                 );
             } else if (outputFormat === "flac") {
                 argumentsList.push(
